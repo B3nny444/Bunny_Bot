@@ -1,10 +1,11 @@
 version: 1.0
+
 app:
-  name:Bunny_Bot
-  runtime: nodejs
+  name: Bunny_Bot
+  runtime: python
   build:
     command: pip install -r requirements.txt
   start:
-   command: python bot.py
-  env: 
-  - PYTHONUNBUFFERED=1
+    command: python bot.py
+  env:
+    - PYTHONUNBUFFERED=1
