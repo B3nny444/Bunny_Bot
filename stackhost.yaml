@@ -2,8 +2,8 @@ version: 1.0
 
 app:
   name: Bunny_Bot
-  language: python
-  runtime: python
+  language: python        # ✅ REQUIRED: Specifies the language
+  runtime: python-3.11    # ✅ (or another valid Python version your platform supports)
   build:
     command: pip install -r requirements.txt
   start:
