@@ -1,15 +1,17 @@
-version: 1.0
+user:
+  name: bunny
+  github: b3nny444
 
-app:
-  name: Bunny_Bot
+language: "python"
+python_version: "3.13"
+
+commands:
   build:
-    command: pip install -r requirements.txt
+    - "pip install -r requirements.txt"
+  package:
+    - "nano inxi"
   start:
-    command: python bot.py
-  env:
-    - PYTHONUNBUFFERED=1
+    - "python3 bot.py"
 
-# Add an explicit 'environment' section
-environment:
-  language: python
-  runtime: python-3.10  # Optional but recommended for clarity
+env:
+  - "ENVIRONMENT=production"
