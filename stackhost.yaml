@@ -1,17 +1,14 @@
-user:
-  name: bunny
-  github: b3nny444
+version: "1.0"
 
-language: "python"
-python_version: "3.13"
-
-commands:
+app:
+  name: ai-python-app
+  runtime: python
+  python_version: "3.13"
   build:
-    - "pip install -r requirements.txt"
-  package:
-    - "nano inxi"
+    command: pip install -r requirements.txt
   start:
-    - "python3 bot.py"
+    command: python3 bot.py
 
 env:
-  - "ENVIRONMENT=production"
+  - ENVIRONMENT=production
+  - TELEGRAM_BOT_TOKEN=your_actual_token_here
