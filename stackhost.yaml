@@ -2,6 +2,7 @@ version: 1.0
 
 app:
   name: Bunny_Bot
+  language: python
   runtime: python
   build:
     command: pip install -r requirements.txt
